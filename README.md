@@ -1,5 +1,6 @@
 # BabyChef
 
+This project does along with the teachings in the [Angular 6(formerly Angular 2) - The Complete Guide](https://www.udemy.com/the-complete-guide-to-angular-2/learn/v4/overview) Udemy course taught by Maximilian Schwarzmuller.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
 ## Development server
