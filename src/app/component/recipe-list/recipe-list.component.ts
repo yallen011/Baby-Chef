@@ -18,7 +18,7 @@ export class RecipeListComponent implements OnInit {
   {
     name: 'Quinoa',
     description: 'hearty meal with green peas and chopped carrots',
-    imagePath: 'https://cdn.pixabay.com/photo/2017/09/17/23/21/gastronomy-2760200_1280.jpg'
+    imagePath: 'https://www.onceuponachef.com/images/2013/05/thai-quinoa-salad-11.jpg'
   }];
 
   constructor() { }

@@ -8,7 +8,6 @@ import { Recipe } from '../../model/recipe';
   styleUrls: ['./recipe-detail.component.css']
 })
 export class RecipeDetailComponent implements OnInit {
-
   @Input() recipe: Recipe;
 
   ingredients: Ingredient[] = [{
@@ -24,6 +23,5 @@ export class RecipeDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.recipe = new Recipe();
   }
 }
