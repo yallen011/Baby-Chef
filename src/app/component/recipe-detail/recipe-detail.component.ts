@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Ingredient } from '../../model/ingredient';
+import { Recipe } from '../../model/recipe';
 
 @Component({
   selector: 'app-recipe-detail',
@@ -7,6 +8,8 @@ import { Ingredient } from '../../model/ingredient';
   styleUrls: ['./recipe-detail.component.css']
 })
 export class RecipeDetailComponent implements OnInit {
+
+  @Input() recipe: Recipe;
 
   ingredients: Ingredient[] = [{
     name: 'shrimp',
@@ -21,6 +24,6 @@ export class RecipeDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.recipe = new Recipe();
   }
-
 }

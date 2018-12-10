@@ -1,5 +1,5 @@
 
-<a *ngFor="let recipe of recipes" class="list-group-item clearfix" href="#" role="button">
+<a (click)="onSelectRecipe()" class="list-group-item clearfix" href="#" role="button">
   <div class="float-left">
       <h4 class="list-group-item-heading">{{recipe.name}}</h4>
       <p class="list-group-item-text">{{recipe.description}}</p>
