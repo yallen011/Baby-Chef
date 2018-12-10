@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header (selectedTab)=onTabSelected($event)></app-header>
 <div class="container-fluid ml-2 mt-2">
   <div class="row">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <app-recipe-book></app-recipe-book>
-    <app-shopping-list></app-shopping-list>
+    <app-recipe-book *ngIf="tabSelected === 'recipe'"></app-recipe-book>
+    <app-shopping-list *ngIf="tabSelected === 'shopping'"></app-shopping-list>
   </div>
 </div>
 
