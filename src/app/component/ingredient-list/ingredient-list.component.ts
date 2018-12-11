@@ -8,7 +8,7 @@ import { Ingredient } from '../../model/ingredient';
 })
 export class IngredientListComponent implements OnInit {
 
-  @Input() ingredients: Ingredient;
+  @Input() ingredients: Ingredient[];
 
   constructor() { }
 

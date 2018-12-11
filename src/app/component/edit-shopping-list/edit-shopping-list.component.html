@@ -3,19 +3,23 @@
   <div class="col-xs-12 col-sm-12">
     <form>
       <div class="row">
-        <div class="form-group col-sm-5">
+        <div class="form-group col-sm-4">
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" class="form-control" value="" required="required">
+          <input #nameInput type="text" name="name" id="name" class="form-control" required> 
         </div>
         <div class="form-group col-sm-2">
           <label for="amount">Amount</label>
-          <input type="text" class="form-control" name="amount" id="amount" placeholder="">
+          <input #amountInput type="text" name="amount" id="amount" class="form-control" >
         </div>
+        <div class="form-group col-sm-2">
+            <label for="amount">Measurement</label>
+            <input #measurementInput type="text" name="measurement" id="measurement" class="form-control" >
+          </div>
       </div>
       
       <div class="row">
         <div class="col-xs-12 col-sm-12">
-          <button type="submit" class="btn btn-success mr-1">Add</button>
+          <button type="submit" (click)="onAddIngredient()" class="btn btn-success mr-1">Add</button>
           <button type="button" class="btn btn-danger mr-1">Delete</button>
           <button type="button" class="btn btn-outline-primary mr-1">Clear</button>
         </div>
