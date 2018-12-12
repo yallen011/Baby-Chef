@@ -12,6 +12,10 @@ export class EditShoppingListComponent implements OnInit {
   @ViewChild('amountInput') amountInputRef: ElementRef;
   @ViewChild('measurementInput') measurementInputRef: ElementRef;
 
+  name = '';
+  amount = '';
+  measurement = '';
+
   @Output() addIngredient = new EventEmitter<Ingredient>();
 
   constructor() { }
@@ -24,6 +28,11 @@ export class EditShoppingListComponent implements OnInit {
     const ingredientAmount = this.amountInputRef.nativeElement.value;
     const ingredientMeasurement = this.measurementInputRef.nativeElement.value;
     this.addIngredient.emit(new Ingredient(ingredientName, ingredientAmount, ingredientMeasurement));
+
+    // reset input fields
+    this.name = '';
+    this.amount = '';
+    this.measurement = '';
   }
 
 }
