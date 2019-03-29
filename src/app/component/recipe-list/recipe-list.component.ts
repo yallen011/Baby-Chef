@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Recipe } from '../../model/recipe';
+import { RecipeService } from 'src/app/service/recipe/recipe.service';
 
 @Component({
   selector: 'app-recipe-list',
@@ -21,7 +22,7 @@ export class RecipeListComponent implements OnInit {
     imagePath: 'https://www.onceuponachef.com/images/2013/05/thai-quinoa-salad-11.jpg'
   }];
 
-  constructor() { }
+  constructor(private recipe: RecipeService) { }
 
   ngOnInit() {
   }
