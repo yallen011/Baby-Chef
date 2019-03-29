@@ -19,7 +19,7 @@ export class EditShoppingListComponent implements OnInit {
 
   @Output() addIngredient = new EventEmitter<Ingredient>();
 
-  constructor(private shoppingList: ShoppingListService) { }
+  constructor(private shoppingListService: ShoppingListService) { }
 
   ngOnInit() {
   }
@@ -28,8 +28,12 @@ export class EditShoppingListComponent implements OnInit {
     const ingredientName = this.nameInputRef.nativeElement.value;
     const ingredientAmount = this.amountInputRef.nativeElement.value;
     const ingredientMeasurement = this.measurementInputRef.nativeElement.value;
-    this.addIngredient.emit(new Ingredient(ingredientName, ingredientAmount, ingredientMeasurement));
+    this.shoppingListService.addIngredient(new Ingredient(ingredientName, ingredientAmount, ingredientMeasurement));
 
+    this.resetFields();
+  }
+
+  resetFields() {
     // reset input fields
     this.name = '';
     this.amount = '';
