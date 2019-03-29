@@ -10,21 +10,12 @@ import { RecipeService } from 'src/app/service/recipe/recipe.service';
 export class RecipeListComponent implements OnInit {
 
   @Output() selectedRecipe = new EventEmitter<Recipe>();
+  recipes: Recipe[];
 
-  recipes: Recipe[] = [{
-    name: 'Shrimp Salad',
-    description: 'juicy shrimp with a full bed of lettuce and veggies',
-    imagePath: 'https://upload.wikimedia.org/wikipedia/commons/3/39/Recipe.jpg'
-  },
-  {
-    name: 'Quinoa',
-    description: 'hearty meal with green peas and chopped carrots',
-    imagePath: 'https://www.onceuponachef.com/images/2013/05/thai-quinoa-salad-11.jpg'
-  }];
-
-  constructor(private recipe: RecipeService) { }
+  constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
+    this.recipes = this.recipeService.getRecipes();
   }
 
   onRecipeSelected(recipeItem: Recipe) {
