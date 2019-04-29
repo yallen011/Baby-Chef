@@ -5,25 +5,17 @@ import { Ingredient } from '../../model/ingredient';
   providedIn: 'root'
 })
 export class ShoppingListService {
-  private ingredients: Ingredient[] = [{
-    name: 'shrimp',
-    amount: 1,
-    measurement: 'cup'
-  },
-  {
-    name: 'bib lettuce',
-    amount: 1,
-    measurement: 'bunch'
-  }];
+  private ingredients: Ingredient[] = [
+    new Ingredient('shrimp', 1, 'cup'),
+    new Ingredient('bib lettuce', 1, 'bunch')
+  ];
   constructor() { }
 
   addIngredient(newIngredient: Ingredient) {
     this.ingredients.push(newIngredient);
-    // console.log(this.ingredients);
   }
 
   getIngredients() {
-   // console.log(this.ingredients);
     return this.ingredients;
   }
 }

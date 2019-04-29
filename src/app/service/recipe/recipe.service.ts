@@ -13,7 +13,7 @@ export class RecipeService {
     name: 'Shrimp Salad',
     description: 'juicy shrimp with a full bed of lettuce and veggies',
     imagePath: 'https://upload.wikimedia.org/wikipedia/commons/3/39/Recipe.jpg',
-    ingredient: [{
+    ingredients: [{
       name: 'shrimp',
       amount: 1,
       measurement: 'bag'
@@ -23,7 +23,7 @@ export class RecipeService {
     name: 'Quinoa',
     description: 'hearty meal with green peas and chopped carrots',
     imagePath: 'https://www.onceuponachef.com/images/2013/05/thai-quinoa-salad-11.jpg',
-    ingredient: [{
+    ingredients: [{
       name: 'quioa',
       amount: 1,
       measurement: 'cup'

@@ -10,16 +10,6 @@ import { Recipe } from '../../model/recipe';
 export class RecipeDetailComponent implements OnInit {
   @Input() recipe: Recipe = new Recipe();
 
-  ingredients: Ingredient[] = [{
-    name: 'shrimp',
-    amount: 1,
-    measurement: 'cup'
-  },
-  {
-    name: 'bib lettuce',
-    amount: 1,
-    measurement: 'bunch'
-  }];
   constructor() { }
 
   ngOnInit() {

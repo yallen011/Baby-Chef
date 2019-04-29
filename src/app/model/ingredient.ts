@@ -1,3 +1,3 @@
 export class Ingredient {
-    constructor(name?: string, amount?: number, measurement?: string) {}
+    constructor(public name?: string, public amount?: number, public measurement?: string) {}
 }
