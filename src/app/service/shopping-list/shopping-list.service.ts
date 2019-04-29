@@ -19,9 +19,11 @@ export class ShoppingListService {
 
   addIngredient(newIngredient: Ingredient) {
     this.ingredients.push(newIngredient);
+    // console.log(this.ingredients);
   }
 
   getIngredients() {
+   // console.log(this.ingredients);
     return this.ingredients;
   }
 }

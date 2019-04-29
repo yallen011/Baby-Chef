@@ -8,7 +8,7 @@ import { Recipe } from '../../model/recipe';
   styleUrls: ['./recipe-detail.component.css']
 })
 export class RecipeDetailComponent implements OnInit {
-  @Input() recipe: Recipe;
+  @Input() recipe: Recipe = new Recipe();
 
   ingredients: Ingredient[] = [{
     name: 'shrimp',
