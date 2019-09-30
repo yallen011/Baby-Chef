@@ -1,22 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
+
+import { RecipeBookComponent} from './recipes/recipe-book/recipe-book.component';
 import { AppComponent } from './app.component';
-import { RecipeBookComponent } from './component/recipe-book/recipe-book.component';
 import { IngredientItemComponent } from './component/ingredient-item/ingredient-item.component';
 import { IngredientListComponent } from './component//ingredient-list/ingredient-list.component';
-import { RecipeListComponent } from './component//recipe-list/recipe-list.component';
-import { RecipeItemComponent } from './component//recipe-item/recipe-item.component';
-import { RecipeDetailComponent } from './component/recipe-detail/recipe-detail.component';
 import { ShoppingListComponent } from './component/shopping-list/shopping-list.component';
 import { AddIngredientComponent } from './component/add-ingredient/add-ingredient.component';
-import { AddRecipeComponent } from './component/add-recipe/add-recipe.component';
 import { HeaderComponent } from './component/header/header.component';
 import { EditShoppingListComponent } from './component/edit-shopping-list/edit-shopping-list.component';
-import { RecipeEditComponent } from './component/recipe-edit/recipe-edit.component';
 import { DropdownHighlightDirective } from './directive/dropdown-highlight/dropdown-highlight.directive';
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
+import { RecipeItemComponent } from './recipes/recipe-item/recipe-item.component';
+import { AddRecipeComponent } from './recipes/add-recipe/add-recipe.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import { DropdownHighlightDirective } from './directive/dropdown-highlight/dropd
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    // HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

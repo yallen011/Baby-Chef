@@ -9,9 +9,9 @@ import { ShoppingListService } from 'src/app/service/shopping-list/shopping-list
 })
 export class EditShoppingListComponent implements OnInit {
   ingredient: Ingredient = new Ingredient();
-  @ViewChild('nameInput') nameInputRef: ElementRef;
-  @ViewChild('amountInput') amountInputRef: ElementRef;
-  @ViewChild('measurementInput') measurementInputRef: ElementRef;
+  @ViewChild('nameInput', { static: true }) nameInputRef: ElementRef;
+  @ViewChild('amountInput', { static: true }) amountInputRef: ElementRef;
+  @ViewChild('measurementInput', { static: true }) measurementInputRef: ElementRef;
 
   name = '';
   amount = '';
