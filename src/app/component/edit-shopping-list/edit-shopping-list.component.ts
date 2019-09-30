@@ -8,9 +8,10 @@ import { ShoppingListService } from 'src/app/service/shopping-list/shopping-list
   styleUrls: ['./edit-shopping-list.component.css']
 })
 export class EditShoppingListComponent implements OnInit {
-  @ViewChild('nameInput') nameInputRef: ElementRef;
-  @ViewChild('amountInput') amountInputRef: ElementRef;
-  @ViewChild('measurementInput') measurementInputRef: ElementRef;
+  ingredient: Ingredient = new Ingredient();
+  @ViewChild('nameInput', { static: true }) nameInputRef: ElementRef;
+  @ViewChild('amountInput', { static: true }) amountInputRef: ElementRef;
+  @ViewChild('measurementInput', { static: true }) measurementInputRef: ElementRef;
 
   name = '';
   amount = '';

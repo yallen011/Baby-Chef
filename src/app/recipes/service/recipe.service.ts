@@ -1,6 +1,7 @@
 import { Injectable, EventEmitter } from '@angular/core';
-import { Recipe } from '../../model/recipe';
-import { Ingredient } from '../../model/ingredient';
+import { Recipe } from '../model/recipe';
+
+
 
 @Injectable({
   providedIn: 'root'
