@@ -17,14 +17,14 @@ import { IngredientsModule } from './ingredients/ingredients.module';
     ShoppingListComponent,
     HeaderComponent,
     EditShoppingListComponent,
-    DropdownHighlightDirective,
-    RecipesModule,
-    IngredientsModule
+    DropdownHighlightDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RecipesModule,
+    IngredientsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,6 +8,7 @@ import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 import { IngredientsModule } from '../ingredients/ingredients.module';
 import { RecipeBookComponent } from './recipe-book/recipe-book.component';
+import { RecipesRoutingModule } from './recipes-routing.module';
 
 
 
@@ -22,7 +23,8 @@ import { RecipeBookComponent } from './recipe-book/recipe-book.component';
   ],
   imports: [
     CommonModule,
-    IngredientsModule
+    IngredientsModule,
+    RecipesRoutingModule
   ],
   exports: [
     RecipeBookComponent,
