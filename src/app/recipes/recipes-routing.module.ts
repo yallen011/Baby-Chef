@@ -5,7 +5,7 @@ import { RecipeBookComponent } from './recipe-book/recipe-book.component';
 
 
 const routes: Routes = [
-  {path: 'recipes', component: RecipeBookComponent}
+  { path: 'recipes', component: RecipeBookComponent }
 ];
 
 @NgModule({
