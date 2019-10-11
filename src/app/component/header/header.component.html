@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">
-      <img src="https://previews.123rf.com/images/mumut/mumut1701/mumut170100003/70655555-cartoon-vector-baby-chef-icon-for-design-element.jpg" 
+      <img src="https://previews.123rf.com/images/mumut/mumut1701/mumut170100003/70655555-cartoon-vector-baby-chef-icon-for-design-element.jpg"
       width="30" height="30"
       class="d-inline-block align-top" alt="icon"> <!-- icon-->
       Baby Chef <!-- label-->
@@ -12,11 +12,11 @@
       <!-- hidden-md-down creates a hamburger menu on smaller screens so you can
       still see your nav options -->
       <ul class="navbar-nav w-100 hidden-md-down">
-        <li class="nav-item active">
-          <a class="nav-link" href="#" (click)="switchToTab('recipe')">Recipe <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="recipes" routerLinkActive="active"> Recipe <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" (click)="switchToTab('shopping')">Shopping List</a>
+          <a class="nav-link" routerLink="shopping-list" routerLinkActive="active">Shopping List</a>
         </li>
         <!-- ml-auto aligns the dropdown to the right side of the screen -->
         <li class="nav-item dropdown ml-auto">
@@ -30,6 +30,6 @@
             <a appDropdownHighlight class="dropdown-item" href="#">Find Data</a>
           </div>
         </li>
-      </ul>  
+      </ul>
     </div>
   </nav>

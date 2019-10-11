@@ -27,7 +27,6 @@ import { RecipesRoutingModule } from './recipes-routing.module';
     RecipesRoutingModule
   ],
   exports: [
-    RecipeBookComponent,
     RecipeListComponent,
     RecipeItemComponent,
     RecipeDetailComponent,
