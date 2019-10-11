@@ -10,6 +10,7 @@ import { EditShoppingListComponent } from './component/edit-shopping-list/edit-s
 import { DropdownHighlightDirective } from './directive/dropdown-highlight/dropdown-highlight.directive';
 import { RecipesModule } from './recipes/recipes.module';
 import { IngredientsModule } from './ingredients/ingredients.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { IngredientsModule } from './ingredients/ingredients.module';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    AppRoutingModule,
     RecipesModule,
     IngredientsModule
   ],

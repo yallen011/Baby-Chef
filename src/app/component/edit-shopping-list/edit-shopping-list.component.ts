@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { Ingredient } from '../../model/ingredient';
+import { Ingredient } from '../../ingredients/model/ingredient';
 import { ShoppingListService } from 'src/app/service/shopping-list/shopping-list.service';
 
 @Component({
